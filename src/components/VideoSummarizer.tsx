@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Youtube, FileText, Loader2 } from 'lucide-react';
 
-
 export default function VideoSummarizer() {
   const [url, setUrl] = useState('');
   const [loading, setLoading] = useState(false);
@@ -21,7 +20,7 @@ export default function VideoSummarizer() {
     }
   
     try {
-      // Call OpenRouter API directly from the frontend
+      // Call OpenRouter API directly from the frontend ss
       const apik = import.meta.env.VITE_API_KEY;
  
       const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
